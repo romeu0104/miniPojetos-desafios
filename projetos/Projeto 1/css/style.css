@@ -1,0 +1,85 @@
+body{
+    position: relative;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/deadpool_PNG56.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-color: black; 
+    background-position: center;
+}
+header{
+    height: 15vh;
+    background-color: rgba(236, 234, 238, 0.568);
+    display: flex;
+    border-radius: 15px;
+}
+main{
+    height: 75vh;
+    display: flex;
+    border-radius: 15px;
+    
+}
+footer{
+    height: 10vh;
+    background-color: rgba(236, 234, 238, 0.568);
+    border-radius: 15px;
+}
+.divHeader{
+    width: 70%;
+    margin: 0 15% 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+}
+nav{
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;  
+}
+#noticias, #galeria{
+    margin-left: 50px;
+}
+a:hover{
+    color: darkred;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: red;
+}
+blockquote{
+    color: white;
+    z-index: 10;
+    width: 30vw;
+    margin-top: 150px;
+    
+}
+
+h1{
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    font-family: 'Libre Baskerville', serif;
+    margin: 0px;
+
+}
+.creditos{
+    margin: 0 15% 0 15%;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

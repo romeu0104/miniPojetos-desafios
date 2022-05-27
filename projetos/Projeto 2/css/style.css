@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    width: 100%;
+    background-image: url(../img/cachoeira.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 10vh;
+    background-color: #808000;
+    text-shadow: 3px 1px 1px  black;
+}
+.cabecalho{
+    width: 75vw;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    font-family: 'Bebas Neue', cursive;
+    color: #09b109;
+    font-size: 50px;
+}
+#meLeve{
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    padding: 10% 20% 0 20%;
+    border-radius: 10px;
+    border-color: transparent;    
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: #09b109;
+    font-size: 20px;
+    line-height: none;
+}
+.contenier{
+    text-align: center;
+    height: auto;
+    width: 50%;
+    padding: 0px;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 15px;
+    color: rgb(8, 51, 14);
+    background-color: #80800098;
+}
+#h1{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    font-family: 'Baloo Tammudu 2', cursive;
+    font-size: 90px;
+    text-shadow: 3px 1px 1px  black;
+}
+.dadosLogin{
+    margin-bottom: 25px;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+input{
+    margin-top: 15px;
+    width: 400px;
+    height: 30px;
+    background-color: rgba(221, 221, 221, 0.76);
+    border-radius: 5px;
+    border: none;
+}
+input:hover{
+    background-color: white;
+}
+#noSingin{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    
+    margin-bottom: 5%;
+
+}
+#logar{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #09b109;
+    border: none;
+    border-radius: 10px;
+}
