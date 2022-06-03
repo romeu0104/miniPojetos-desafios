@@ -12,7 +12,11 @@ body{
 
 .Container{
     margin: 0 auto;
-    background-color: #dcdcdc;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
 }
 
 #topo{
@@ -20,11 +24,47 @@ body{
     right: 10px;
     bottom: 10px;
 }
+
+/*SmartPhone Portrait*/
+
+header{
+    height: 60px;
+}
+#logo img{
+    height: 128px;
+    width: 128px;
+}
+
+#check{
+    display: none;
+}
+label{
+    font-size: 3em;
+    padding-right: 15px;
+}
+nav ul{
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 50%;
+    transition: all 0.5s;
+}
+#check:checked~ul{ /*Aqui estou dizendo quando o checkbox criado for clicado e irá mudar (~) a propriedade do ul para o valor descrito */
+    right: 0;
+}
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 /* SmartPhone Landscape*/
 @media screen and (min-width: 576px) {
-    body{
-        background-color: #0ff;
-    }
     .Container{
         max-width: 540px;
     }
@@ -32,9 +72,6 @@ body{
 
 /*Tablet Portrait*/
 @media screen and (min-width: 768px) {
-    body{
-        background-color: #ff0;
-    }    
     .Container{
         max-width: 720px;
     }
@@ -42,9 +79,6 @@ body{
 
 /*Tablet Landscape*/
 @media screen and (min-width: 992px) {
-    body{
-        background-color: #ff6600;
-    }
     .Container{
         max-width: 960px;
     }
@@ -52,10 +86,35 @@ body{
 
 /*Pc */
 @media screen and (min-width: 1200px) {
-    body{
-        background-color: #f00;
-    }   
     .Container{
         max-width: 1140px;
+    }
+    header{
+        height: 128px;
+    }
+    #logo img{
+        width: 189px;
+        height: 189px;
+        margin-top: 30px;
+    }
+    label{
+        display: none;
+    }
+    nav ul{
+        position: static;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        margin-top: 50px;
+    }
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+    nav ul li a{
+        color: #343538;
+    }
+    nav ul li a:hover{
+        color: #c00000;
     }
 }
