@@ -10,6 +10,7 @@ body{
     font-size: 1em;
 }
 
+/*Layout*/
 .Container{
     margin: 0 auto;
 }
@@ -17,6 +18,16 @@ body{
 .flex{
     display: flex;
     justify-content: space-between;
+}
+.botao{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
 }
 
 #topo{
@@ -63,6 +74,28 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
+
+main{
+    height: 75vh;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main h1{
+    font-size: 2.5em;
+}
+main h2{
+    font-size: 1em;
+    margin: 20px 0 50px 0;
+}
+main h1, main h2{
+    text-shadow: #000 0.5em 0.5em 0.5em 0.5em;
+}
 /* SmartPhone Landscape*/
 @media screen and (min-width: 576px) {
     .Container{
@@ -75,12 +108,24 @@ nav ul li a{
     .Container{
         max-width: 720px;
     }
+    main{
+        height: 45vh;
+    }
+    main h1{
+        font-size: 5.5em;
+    }
+    main h2{
+        font-size: 2em;
+    }
 }
 
 /*Tablet Landscape*/
 @media screen and (min-width: 992px) {
     .Container{
         max-width: 960px;
+    }
+    main{
+        height: 70vh;
     }
 }
 
