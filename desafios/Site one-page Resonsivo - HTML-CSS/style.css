@@ -1,0 +1,28 @@
+
+/* SmartPhone Landscape*/
+@media screen and (min-width: 576px) {
+    body{
+        background-color: #0ff;
+    }    
+}
+
+/*Tablet Portrait*/
+@media screen and (min-width: 768px) {
+    body{
+        background-color: #ff0;
+    }    
+}
+
+/*Tablet Landscape*/
+@media screen and (min-width: 992px) {
+    body{
+        background-color: #ff6600;
+    }    
+}
+
+/*Pc */
+@media screen and (min-width: 1200px) {
+    body{
+        background-color: #f00;
+    }    
+}
