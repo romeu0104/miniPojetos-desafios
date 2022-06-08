@@ -1,0 +1,4 @@
+Desafio site com menu Responsivo sem JS:
+
+Série de vídeos no youtube onde acompanho o desenvolvimento de um projeto onde tento fazer primeiro e vou corrigindo ou melhorando de acordo com a resolução do conteúdo.
+Intenção de entender o funcionamento e posteriormente em outro projeto aplicar com JS
