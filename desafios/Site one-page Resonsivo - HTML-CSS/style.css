@@ -19,6 +19,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.flex2{
+    display: flex;
+    align-items: center;
+}
 .botao{
     text-decoration: none;
     color: #fff;
@@ -80,6 +84,7 @@ main{
     background-image: url(img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -96,11 +101,27 @@ main h2{
 main h1, main h2{
     text-shadow: #000 0.5em 0.5em 0.5em 0.5em;
 }
-/* SmartPhone Landscape*/
-@media screen and (min-width: 576px) {
-    .Container{
-        max-width: 540px;
-    }
+#sobre{
+    padding: 50px 0px;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+#destaqueSobre{
+    display: none;
+}
+#textoSobre{
+    color: #fff;
+    padding: 0px 10px;
+}
+#textoSobre h2{
+    margin-bottom: 10px;
+}
+.topicosSobre{
+    margin-top: 20px;
+}
+.topicosSobre img{
+    margin-right: 10px;
 }
 
 /*Tablet Portrait*/
@@ -116,6 +137,13 @@ main h1, main h2{
     }
     main h2{
         font-size: 2em;
+    }
+}
+
+/* SmartPhone Landscape*/
+@media screen and (min-width: 576px) {
+    .Container{
+        max-width: 540px;
     }
 }
 
@@ -161,5 +189,15 @@ main h1, main h2{
     }
     nav ul li a:hover{
         color: #c00000;
+    }
+    #sobre{
+        background-attachment: fixed;
+    }
+    #destaqueSobre{
+        display: inline;
+    }
+    #destaqueSobre img{
+        border-radius: 50%;
+        margin-right: 50px;
     }
 }
